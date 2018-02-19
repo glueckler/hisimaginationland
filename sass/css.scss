@@ -1,0 +1,52 @@
+@font-face {
+    font-family: menlo;
+    src: url(../fonts/Menlo-Regular.ttf);
+}
+
+body {
+	font-family: menlo, "Palatino Linotype";
+	font-size: 15px;
+	line-height: 30px;
+	height: 100vh;
+	width: 100vw;
+	background-image: url('../img/bg.png');
+	background-repeat: no-repeat;
+	background-size: auto 50%;
+	background-position: center -50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media (max-width: 500px) {
+		font-size: 11px;
+		line-height: 22px;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	&:hover{
+		font-size: 1.1em;
+	}
+	transition: font-size .05s ease-in-out;
+}
+
+.nav-content{
+	height: 250px;
+}
+
+.nav-class {
+	padding-top: 50px;
+	ul{
+		padding: 0;
+		margin: 0;
+		background-color: rgba(255,255,255,0.7);
+		border-radius: 5px;
+	}
+	li{
+		padding: 0 20px;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+	}
+}

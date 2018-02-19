@@ -1,0 +1,61 @@
+@font-face {
+  font-family: menlo;
+  src: url(../fonts/Menlo-Regular.ttf);
+}
+/* line 6, ../sass/css.scss */
+body {
+  font-family: menlo, "Palatino Linotype";
+  font-size: 15px;
+  line-height: 30px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  background-position: center -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  /* line 6, ../sass/css.scss */
+  body {
+    font-size: 11px;
+    line-height: 22px;
+  }
+}
+
+/* line 25, ../sass/css.scss */
+a {
+  text-decoration: none;
+  color: black;
+  transition: font-size .05s ease-in-out;
+}
+/* line 28, ../sass/css.scss */
+a:hover {
+  font-size: 1.1em;
+}
+
+/* line 34, ../sass/css.scss */
+.nav-content {
+  height: 250px;
+}
+
+/* line 38, ../sass/css.scss */
+.nav-class {
+  padding-top: 50px;
+}
+/* line 40, ../sass/css.scss */
+.nav-class ul {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+}
+/* line 46, ../sass/css.scss */
+.nav-class li {
+  padding: 0 20px;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
